@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Piyush — Portfolio & Learning Hub</title>
+		<meta name="description" content="Piyush — projects, learning, achievements and blog." />
+		<meta name="keywords"
+			content="Piyush Nagpal, portfolio, projects, learning, achievements, blog, STEM, AI, coding, engineering, machine learning, embedded systems" />
+		<meta name="author" content="Piyush Nagpal" />
+		<meta name="robots" content="index, follow" />
+		<meta property="og:title" content="Piyush — Portfolio & Learning Hub" />
+		<meta property="og:description" content="Piyush — projects, learning, achievements and blog." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://piyushnagpal.com" />
+		<meta property="og:image" content="https://piyushnagpal.com/codes.png" />
+		<meta property="og:image:alt" content="Piyush Nagpal Avatar" />
+		<meta property="og:site_name" content="Piyush Nagpal Portfolio" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Piyush — Portfolio & Learning Hub" />
+		<meta name="twitter:description" content="Piyush — projects, learning, achievements and blog." />
+		<meta name="twitter:image" content="https://piyushnagpal.com/codes.png" />
+		<meta name="twitter:image:alt" content="Piyush Nagpal Avatar" />
+		<meta name="twitter:site" content="@piyushnagpal" />
+		<link rel="canonical" href="https://piyushnagpal.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="transparent" id="topNav">
+			<div class="nav-inner">
+				<div class="brand">Piyush Nagpal</div>
+				<div class="hamburger" id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="nav-links" aria-label="Main navigation" id="navLinks">
+					<a href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#learning">Learning</a>
+					<a href="#contact" class="ghost">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="hero" id="home">
+				<div class="bg-circles">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
+				</div>
+				<div class="parallax" id="parallaxLayer">
+					<svg class="shape" style="width:420px;left:-80px;top:10%;transform:rotate(12deg);opacity:0.08"
+						viewBox="0 0 200 200">
+						<defs>
+							<linearGradient id="g1" x1="0" x2="1">
+								<stop offset="0" stop-color="#B76D68" />
+								<stop offset="1" stop-color="#403F4C" />
+							</linearGradient>
+						</defs>
+						<path fill="url(#g1)"
+							d="M43.2,-64.3C60.6,-55.6,78.5,-44.1,83.9,-29.2C89.4,-14.3,82.5,4.9,73,23.5C63.5,42.1,51.5,60.1,35.1,66C18.7,72,-2.1,65.9,-20.8,57C-39.6,48.1,-56.2,36.4,-63.6,20.8C-71,5.2,-69.3,-16.3,-59.6,-32.9C-49.9,-49.5,-32.1,-61.1,-12.6,-66.1C6.8,-71.2,34.1,-69.1,43.2,-64.3Z"
+							transform="translate(100 100)" />
+					</svg>
+					<svg class="shape" style="width:240px;right:-40px;bottom:4%;transform:rotate(-22deg);opacity:0.06"
+						viewBox="0 0 200 200">
+						<path fill="#2C2B3C"
+							d="M40.2,-60.4C54.8,-49.7,67.1,-37.2,71.7,-21.8C76.2,-6.3,73,12.1,64.3,25.9C55.7,39.6,41.7,49.9,26.2,56.8C10.6,63.7,-6.8,67.2,-23.9,63.5C-41,59.7,-57.8,48.8,-65.6,33.2C-73.3,17.6,-71.9,-2.8,-64.7,-21.7C-57.5,-40.6,-44.5,-58,-27.1,-67.8C-9.7,-77.6,11.3,-79.8,29.8,-74.6C48.4,-69.5,64.9,-56.9,40.2,-60.4Z"
+							transform="translate(100 100)" />
+					</svg>
+					<svg class="shape" style="width:300px;left:20%;bottom:20%;transform:rotate(45deg);opacity:0.1"
+						viewBox="0 0 200 200">
+						<path fill="#403F4C"
+							d="M40,-50C50,-40,60,-30,70,-20C80,-10,90,0,90,10C90,20,80,30,70,40C60,50,50,60,40,70C30,80,20,90,10,90C0,90,-10,80,-20,70C-30,60,-40,50,-50,40C-60,30,-70,20,-80,10C-90,0,-100,-10,-100,-20C-100,-30,-90,-40,-80,-50C-70,-60,-60,-70,-50,-80C-40,-90,-30,-100,-20,-100C-10,-100,0,-90,10,-80C20,-70,30,-60,40,-50Z"
+							transform="translate(100 100)" />
+					</svg>
+				</div>
+				<div class="hero-grid container" style="position:relative;z-index:8">
+					<div class="hero-left">
+						<h1>Hi, I’m Piyush <span style="font-size:28px">👋</span></h1>
+						<div class="tagline" id="dynamicTagline"></div>
+						<p class="hero-summary">I explore science and technology to find the patterns that link them, using
+							code and
+							experimentation to deepen my understanding of how systems work.
+						</p>
+						<div class="hero-ctas">
+							<a href="#projects" class="btn">See My Projects</a>
+							<a href="#learning" class="ghost" style="color:var(--muted)">Explore My Learning</a>
+						</div>
+					</div>
+					<div class="avatar-wrap">
+						<div class="avatar" id="avatar">
+							<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<defs>
+									<linearGradient id="a" x1="0" x2="1">
+										<stop offset="0" stop-color="#B76D68" />
+										<stop offset="1" stop-color="#403F4C" />
+									</linearGradient>
+								</defs>
+								<rect x="12" y="12" width="176" height="176" rx="20" fill="url(#a)" opacity="0.18" />
+								<g transform="translate(30,30)">
+									<circle cx="70" cy="40" r="34" fill="rgba(255,255,255,0.06)" />
+									<rect x="8" y="90" width="124" height="56" rx="12" fill="rgba(255,255,255,0.03)" />
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<div class="container">
+					<h2>About Me</h2>
+					<div class="two-col">
+						<div>
+							<div class="card" style="text-align:center">
+								<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><rect width='100%' height='100%' fill='%231B2432'/><text x='50%' y='50%' font-size='34' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>P</text></svg>"
+									alt="avatar" style="border-radius:10px;" loading="lazy">
+							</div>
+							<div style="height:18px"></div>
+							<div class="card">
+								<strong>Quick facts</strong>
+								<div style="margin-top:8px;color:var(--muted);font-size:14px">
+									Age: 18 • High School (Grade 12) • Majors: Math, Physics, Chemistry
+								</div>
+								<div class="skills" aria-hidden>
+									<div class="skill" title="Python — 4 years">🐍 Python</div>
+									<div class="skill" title="C / C++ — 3 years">💻 C / C++</div>
+									<div class="skill" title="TypeScript / Web — 3 years">📈 TypeScript / Web</div>
+									<div class="skill" title="Data Science & Structures">📊 Data Science</div>
+									<div class="skill" title="Machine Learning Basics">🤖 ML</div>
+									<div class="skill" title="Neural Networks — Basics & Projects">🧠 Neural Networks</div>
+									<div class="skill" title="Arduino / Microcontrollers">🔧 Embedded</div>
+									<div class="skill" title="Mathematics — Problem Solving & Theory">🧮 Math</div>
+									<div class="skill" title="Physics — Concepts & Problem Solving">🧪 Physics</div>
+									<div class="skill" title="Chemistry — Advanced Topics & Experiments">🧬 Chemistry</div>
+									<div class="skill" title="German, English, Spanish — Fluent">🗣️ 4 Languages</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="card">
+								<h3>Bio</h3>
+								<p style="color:var(--muted)">I’m naturally curious and like to figure things out on my own.
+									Give me an
+									abstract problem or a tricky bit of code, and I’ll dive right in. I love building
+									algorithms, tinkering
+									with machine learning models, and spotting patterns in math and physics. Most of my
+									projects end up as a
+									mix of code, data, and a dose of scientific thinking.
+								</p>
+								<p style="color:var(--muted)">Ever since I was a kid, I’ve wanted to know how things
+									work—whether that
+									meant scribbling out equations, running little experiments, or messing around with
+									simulations. That
+									curiosity turned into a habit: now I approach learning and research with a clear,
+									practical mindset.
+								</p>
+								<p style="color:var(--muted)">When I’ve got some free time, you’ll usually find me working
+									on a new ML
+									project, digging into advanced math or physics, jumping into coding challenges, or
+									helping friends out
+									with math and STEM questions.
+								</p>
+								<h4 style="margin-top:12px">Timeline</h4>
+								<div class="timeline" id="timeline">
+									<div class="tl-item" data-year="2025">• AI Sketch Predictor</div>
+									<div class="tl-item" data-year="2024">• Harvard's CS50 courses</div>
+									<div class="tl-item" data-year="2023">• Physics & Chemistry Olympiads</div>
+									<div class="tl-item" data-year="2021">• Machine Learning Crash Course (Google
+										Developers)
+									</div>
+									<div class="tl-item" data-year="2021">• AI / ML Prompt Engineering</div>
+									<div class="tl-item" data-year="2022">• Kaggle – Data Science / Python Projects</div>
+									<div class="tl-item" data-year="2021">• Harvard PH125.x Data Science Series</div>
+									<div class="tl-item" data-year="2021">... and much more !</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projects">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="tabs" role="tablist" id="projectTabs">
+						<div class="tab active" data-filter="all">All</div>
+						<div class="tab" data-filter="done">Completed</div>
+						<div class="tab" data-filter="progress">In Progress</div>
+						<div class="tab" data-filter="idea">Ideas</div>
+					</div>
+					<div class="grid" id="projectsGrid">
+						<article class="card-project" data-type="done">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%232C2B3C'/><text x='50%' y='50%' font-size='28' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Gestura</text></svg>"
+								alt="Gestura" loading="lazy">
+							<h4>Gestura — Smart Rings</h4>
+							<p style="color:var(--muted)">Gesture recognition rings that convert sign language to text using
+								IMUs + ML.
+							</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">ESP32 • ICM-20948 • PyTorch</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+						<article class="card-project" data-type="progress">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Portfolio</text></svg>"
+								alt="Portfolio" loading="lazy">
+							<h4>Portfolio Website</h4>
+							<p style="color:var(--muted)">This site — a polished hub for projects, learning notes and
+								contact.
+							</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">HTML • CSS • TypeScript</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+						<article class="card-project" data-type="idea">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='22' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>ML Tutor</text></svg>"
+								alt="ML Tutor" loading="lazy">
+							<h4>ML Tutor</h4>
+							<p style="color:var(--muted)">Interactive demos to teach ML basics to high-schoolers.</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">JS • D3 • React?</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+						<article class="card-project" data-type="done">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%232C2B3C'/><text x='50%' y='50%' font-size='28' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Robotics Arm</text></svg>"
+								alt="Robotics Arm" loading="lazy">
+							<h4>Robotics Arm Project</h4>
+							<p style="color:var(--muted)">A robotic arm controlled via Arduino for precise movements.</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">Arduino • Servo Motors</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+						<article class="card-project" data-type="done">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%232C2B3C'/><text x='50%' y='50%' font-size='28' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Physics Olympiad 2025</text></svg>"
+								alt="Physics Olympiad 2025" loading="lazy">
+							<h4>Physics Olympiad 2025 – 1st Round</h4>
+							<p style="color:var(--muted)">Participation in the first round of Physics Olympiad 2025.</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">Physics • Olympiad</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+						<article class="card-project" data-type="done">
+							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%232C2B3C'/><text x='50%' y='50%' font-size='28' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Chemistry Olympiad 2025</text></svg>"
+								alt="Chemistry Olympiad 2025" loading="lazy">
+							<h4>Chemistry Olympiad 2025 – 1st & 2nd Round</h4>
+							<p style="color:var(--muted)">Participation in the first and second rounds of Chemistry Olympiad
+								2025.
+							</p>
+							<div class="meta"
+								style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+								<div style="font-size:13px;color:var(--muted)">Chemistry • Olympiad</div>
+								<button class="btn openProj">Open</button>
+							</div>
+						</article>
+					</div>
+					<article class="card-project" data-type="progress">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>General Relativity</text></svg>"
+							alt="Reading: A First Course in General Relativity by Bernard F. Schutz" loading="lazy">
+						<h4>Reading: A First Course in General Relativity by Bernard F. Schutz</h4>
+						<p style="color:var(--muted)">Studying general relativity mathematics</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">Physics • Reading • 18 May 2025</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+					<article class="card-project" data-type="progress">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Retro Arcade Website</text></svg>"
+							alt="Personal Retro Arcade Website" loading="lazy">
+						<h4>Personal Retro Arcade Website</h4>
+						<p style="color:var(--muted)">Retro themed web arcade games</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">Web Dev • Games • 29 May 2025</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+					<article class="card-project" data-type="progress">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Live Emotion Detector</text></svg>"
+							alt="Live Emotion Detector" loading="lazy">
+						<h4>Live Emotion Detector</h4>
+						<p style="color:var(--muted)">Creating a real-time webcam-based emotion recognition app using CNNs
+							and
+							Flask
+						</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">AI • Flask • 19 July 2025</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+					<article class="card-project" data-type="idea">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Google Adv Data Analytics</text></svg>"
+							alt="Google Advanced Data Analytics Professional Certificate" loading="lazy">
+						<h4>Google Advanced Data Analytics Professional Certificate</h4>
+						<p style="color:var(--muted)">Learning more about data science</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">Data Science • Certificate</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+					<article class="card-project" data-type="idea">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Strategic Business Thinking</text></svg>"
+							alt="University of Illinois: Strategic Business Thinking (Coursera)" loading="lazy">
+						<h4>University of Illinois: Strategic Business Thinking (Coursera)</h4>
+						<p style="color:var(--muted)">Business strategy and game theory</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">Business • Strategy</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+					<article class="card-project" data-type="idea">
+						<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='24' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Dartmouth Environmental Science</text></svg>"
+							alt="Dartmouth's Environmental Science Course" loading="lazy">
+						<h4>Dartmouth's Environmental Science Course</h4>
+						<p style="color:var(--muted)">Studying ecological systems, sustainability</p>
+						<div class="meta"
+							style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">
+							<div style="font-size:13px;color:var(--muted)">Science • Ecology</div>
+							<button class="btn openProj">Open</button>
+						</div>
+					</article>
+				</div>
+				</div>
+			</section>
+			<section id="learning">
+				<div class="container">
+					<h2>Learning & Knowledge Base</h2>
+					<div style="display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start">
+						<div style="width:100%;">
+							<h4>Current Learning</h4>
+							<div class="prog-grid">
+								<div class="prog">
+									<strong>Mathematics</strong>
+									<div style="font-size:22px" data-progress="85">85%</div>
+								</div>
+								<div class="prog">
+									<strong>Olympiads</strong>
+									<div style="font-size:22px" data-progress="80">80%</div>
+								</div>
+								<div class="prog">
+									<strong>ML & AI</strong>
+									<div style="font-size:22px" data-progress="70">70%</div>
+								</div>
+								<div class="prog">
+									<strong>Data Science</strong>
+									<div style="font-size:22px" data-progress="65">65%</div>
+								</div>
+								<div class="prog">
+									<strong>Embedded & IoT</strong>
+									<div style="font-size:22px" data-progress="60">60%</div>
+								</div>
+								<div class="prog">
+									<strong>Quantum Physics</strong>
+									<div style="font-size:22px" data-progress="55">55%</div>
+								</div>
+								<div class="prog">
+									<strong>Relativity</strong>
+									<div style="font-size:22px" data-progress="50">50%</div>
+								</div>
+								<div class="prog">
+									<strong>Classical Mechanics</strong>
+									<div style="font-size:22px" data-progress="70">70%</div>
+								</div>
+								<div class="prog">
+									<strong>Topology & Analysis</strong>
+									<div style="font-size:22px" data-progress="60">60%</div>
+								</div>
+								<div class="prog">
+									<strong>Abstract Algebra</strong>
+									<div style="font-size:22px" data-progress="65">65%</div>
+								</div>
+								<div class="prog">
+									<strong>Prompt Engineering</strong>
+									<div style="font-size:22px" data-progress="75">75%</div>
+								</div>
+								<div class="prog">
+									<strong>Languages</strong>
+									<div style="font-size:22px" data-progress="85">85%</div>
+								</div>
+								<div class="prog">
+									<strong>OSINT & Security</strong>
+									<div style="font-size:22px" data-progress="70">70%</div>
+								</div>
+								<div class="prog">
+									<strong>Finance</strong>
+									<div style="font-size:22px" data-progress="60">60%</div>
+								</div>
+							</div>
+						</div>
+						<div style="flex:0 0 400px">
+							<h4>Resources</h4>
+							<ul style="color:var(--muted)">
+								<li>University Physics with Modern Physics, 15th Edition – Hugh D. Young</li>
+								<li>Classical Mechanics – John R. Taylor</li>
+								<li>Quantum Mechanics – Leonard Susskind</li>
+								<li>A Book of Abstract Algebra – Charles C. Pinter</li>
+								<li>A First Course in General Relativity – Bernard F. Schutz</li>
+								<li>Introduction to Topology – Bert Mendelson</li>
+								<li>Chemie Basiswissen – Charles E. Mortimer</li>
+								<li>Harvard Online Courses</li>
+								<li>MIT Online Courses</li>
+								<li>IBM Courses</li>
+								<li>The Feynman Lectures on Physics</li>
+								<li>Kaggle Resources & Datasets</li>
+								<li>Google Colab Resources</li>
+								<li>Online Threads, Tutorials & Guides</li>
+							</ul>
+						</div>
+						<div style="flex:0 0 100px"></div>
+						<div style="flex:1;min-width:280px">
+							<h4>Learned Topics</h4>
+							<details>
+								<summary>Mathematics</summary>
+								<ul style="color:var(--muted)">
+									<li>Linear Algebra: Vectors, matrices, eigenvalues, transformations.</li>
+									<li>Calculus: Derivatives, integrals, multivariable, series.</li>
+									<li>Probability & Statistics: Distributions, Bayes' theorem, expectation.</li>
+									<li>Abstract Algebra: Groups, rings, fields, modular arithmetic.</li>
+									<li>Topology & Analysis: Metric spaces, limits, continuity.</li>
+									<li>Competition Math: Olympiad-style problem solving, combinatorics.</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Programming & Computer Science</summary>
+								<ul style="color:var(--muted)">
+									<li>Python: Advanced scripting, data analysis, NumPy, Pandas, Flask.</li>
+									<li>C++: OOP, STL, algorithms, performance optimization.</li>
+									<li>Java & TypeScript: Basics, web apps, frontend frameworks.</li>
+									<li>Algorithms & Data Structures: Sorting, searching, graphs, trees.</li>
+									<li>Databases: SQL, MySQL, Postgres basics.</li>
+									<li>Prompt Engineering: ChatGPT prompts, optimization techniques.</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Physics</summary>
+								<ul style="color:var(--muted)">
+									<li>Classical Mechanics: Newtonian laws, kinematics, energy, momentum.</li>
+									<li>Electromagnetism: Circuits, fields, potentials.</li>
+									<li>Quantum Mechanics: Wave functions, operators, basic QM theory.</li>
+									<li>Relativity: Special relativity basics, spacetime concepts.</li>
+									<li>Physics Olympiad Problems: Modeling, estimation, problem-solving.</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Chemistry</summary>
+								<ul style="color:var(--muted)">
+									<li>Organic Chemistry: Reactions, mechanisms, functional groups.</li>
+									<li>Inorganic Chemistry: Elements, periodic table, coordination compounds.</li>
+									<li>Physical Chemistry: Thermodynamics, kinetics, equilibria.</li>
+									<li>Chemistry Olympiad Topics: Advanced problem solving and experiments.</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Machine Learning & AI</summary>
+								<ul style="color:var(--muted)">
+									<li>Supervised & Unsupervised Learning</li>
+									<li>Neural Networks & CNNs</li>
+									<li>AI Sketch Predictor & Gesture Recognition Projects</li>
+									<li>Data Preprocessing & Visualization</li>
+									<li>Model Training & Evaluation</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Data Science & Visualization</summary>
+								<ul style="color:var(--muted)">
+									<li>Data Cleaning & Processing with Pandas</li>
+									<li>Visualization: Matplotlib, ggplot2, seaborn</li>
+									<li>Statistics & Probability in Data</li>
+									<li>Exploratory Data Analysis & Insights</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>OSINT & Security</summary>
+								<ul style="color:var(--muted)">
+									<li>Open Source Intelligence Techniques</li>
+									<li>Privacy, Anonymization & Digital Security</li>
+									<li>Investigation Methodologies</li>
+									<br></br>
+								</ul>
+							</details>
+							<details>
+								<summary>Finance & Economics</summary>
+								<ul style="color:var(--muted)">
+									<li>Financial Markets Principles</li>
+									<li>Investment & Risk Fundamentals</li>
+									<li>Data-driven Financial Analysis</li>
+									<br></br>
+								</ul>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="achievements">
+				<div class="container">
+				<h2>Achievements & Recognition</h2>
+				<div class="counters">
+					<div>
+						<div class="counter" data-target="12">0</div>
+						<div style="color:var(--muted)">Projects completed</div>
+					</div>
+					<div>
+						<div class="counter" data-target="6">0</div>
+						<div style="color:var(--muted)">Awards & certificates</div>
+					</div>
+					<div>
+						<div class="counter" data-target="1800">0</div>
+						<div style="color:var(--muted)">Hours learned</div>
+					</div>
+					<div>
+						<div class="counter" data-target="5">0</div>
+						<div style="color:var(--muted)">Hackathons participated</div>
+					</div>
+				</div>
+				<div style="margin-top:32px;">
+				<h4>Certificates & Achievements</h4>
+				<div class="blog-grid">
+					<article class="card">
+						<h4>Certificate Name 1</h4>
+						<div style="color:var(--muted);font-size:13px">Issuing Organization • Date</div>
+						<p style="color:var(--muted)">Description of the achievement or certificate.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%232C2B3C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Certificate 1 Placeholder</text></svg>">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Achievement Name 2</h4>
+						<div style="color:var(--muted);font-size:13px">Event/Organization • Date</div>
+						<p style="color:var(--muted)">Details about the achievement.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Achievement 2 Details</text></svg>">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Achievement Name 2</h4>
+						<div style="color:var(--muted);font-size:13px">Event/Organization • Date</div>
+						<p style="color:var(--muted)">Details about the achievement.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Achievement 2 Details</text></svg>">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Achievement Name 2</h4>
+						<div style="color:var(--muted);font-size:13px">Event/Organization • Date</div>
+						<p style="color:var(--muted)">Details about the achievement.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Achievement 2 Details</text></svg>">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Achievement Name 2</h4>
+						<div style="color:var(--muted);font-size:13px">Event/Organization • Date</div>
+						<p style="color:var(--muted)">Details about the achievement.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Achievement 2 Details</text></svg>">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Certificate Name 3</h4>
+						<div style="color:var(--muted);font-size:13px">Another Organization • Date</div>
+						<p style="color:var(--muted)">Another description.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Certificate 3 Placeholder</text></svg>">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50x</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's Introduction to Computer Science.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50x.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50p</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's Introduction to Programming with Python.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50p.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50SQL</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's SQL course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50sql.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>CS50R</h4>
+						<div style="color:var(--muted);font-size:13px">Harvard • Date</div>
+						<p style="color:var(--muted)">Harvard's Introduction to Programming with R.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-cs50r.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>IBM AI Fundamentals</h4>
+						<div style="color:var(--muted);font-size:13px">IBM • Date</div>
+						<p style="color:var(--muted)">IBM AI Fundamentals certificate.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-ibm.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Google ML Crash Course</h4>
+						<div style="color:var(--muted);font-size:13px">Google • Date</div>
+						<p style="color:var(--muted)">Google Machine Learning Crash Course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-google-ml.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Kaggle Intro to Python & Python</h4>
+						<div style="color:var(--muted);font-size:13px">Kaggle • Date</div>
+						<p style="color:var(--muted)">Kaggle Introduction to Python and Python course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-kaggle.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Bundeswettbewerb Mathematik & Informatik</h4>
+						<div style="color:var(--muted);font-size:13px">Bundeswettbewerb • Date</div>
+						<p style="color:var(--muted)">German Mathematics and Informatics Competition.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-bwi.png">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Internationale PhysikOlympiade & ChemieOlympiade</h4>
+						<div style="color:var(--muted);font-size:13px">Olympiade • Date</div>
+						<p style="color:var(--muted)">International Physics and Chemistry Olympiad.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-olympiad.png">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>OSINT – Basel Institute / Security Blue Team</h4>
+						<div style="color:var(--muted);font-size:13px">Basel Institute • Date</div>
+						<p style="color:var(--muted)">OSINT certificate from Basel Institute and Security Blue
+							Team.
+						</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-osint.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Prompt Engineering – Learn Prompting</h4>
+						<div style="color:var(--muted);font-size:13px">Learn Prompting • Date</div>
+						<p style="color:var(--muted)">Prompt Engineering course.</p>
+						<button class="btn openCert" data-cert-img="https://i.imgur.com/example-prompting.png">View
+						Certificate</button>
+					</article>
+					<article class="card">
+						<h4>Achievement Name 4</h4>
+						<div style="color:var(--muted);font-size:13px">Event/Organization • Date</div>
+						<p style="color:var(--muted)">More details about this achievement.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%233F3F4C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Achievement 4 Placeholder</text></svg>">View
+						Details</button>
+					</article>
+					<article class="card">
+						<h4>Certificate Name 5</h4>
+						<div style="color:var(--muted);font-size:13px">Issuing Organization • Date</div>
+						<p style="color:var(--muted)">Description of another certificate.</p>
+						<button class="btn openCert"
+							data-cert-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%2324324C'/><text x='50%' y='50%' font-size='36' fill='%23B76D68' dominant-baseline='middle' text-anchor='middle'>Certificate 5 Placeholder</text></svg>">View
+						Certificate</button>
+					</article>
+				</div>
+			</section>
+			<section id="blog">
+				<div class="container">
+				<h2>Personal Updates</h2>
+				<div class="blog-grid">
+					<article class="card">
+						<h4>Prototype: Gestura v0.3</h4>
+						<div style="color:var(--muted);font-size:13px">Oct 2025 • Projects</div>
+						<p style="color:var(--muted)">Improved classification latency on ESP32 — notes and next steps.
+						</p>
+					</article>
+					<article class="card">
+						<h4>How I study Linear Algebra</h4>
+						<div style="color:var(--muted);font-size:13px">Sep 2025 • Learning</div>
+						<p style="color:var(--muted)">My daily routine, book list and exercises to build intuition fast.
+						</p>
+					</article>
+					<article class="card">
+						<h4>Exploring Quantum Computing</h4>
+						<div style="color:var(--muted);font-size:13px">Aug 2025 • Learning</div>
+						<p style="color:var(--muted)">Initial thoughts and resources on quantum basics.</p>
+					</article>
+					<article class="card">
+						<h4>How do Computers generate Randomness</h4>
+						<div style="color:var(--muted);font-size:13px">Date • Topic</div>
+						<p style="color:var(--muted)">Explaining computer randomness generation.</p>
+					</article>
+					<article class="card">
+						<h4>Neural Networks Explained like you're 5</h4>
+						<div style="color:var(--muted);font-size:13px">Date • Topic</div>
+						<p style="color:var(--muted)">Simplified explanation of neural networks.</p>
+					</article>
+					<article class="card">
+						<h4>Exploring the Math Behind the Rubik’s Cube</h4>
+						<div style="color:var(--muted);font-size:13px">Date • Topic</div>
+						<p style="color:var(--muted)">Mathematics behind Rubik's Cube.</p>
+					</article>
+					<article class="card">
+						<h4>Table Tennis Tournament Recap</h4>
+						<div style="color:var(--muted);font-size:13px">Jul 2025 • Personal</div>
+						<p style="color:var(--muted)">Highlights from the recent tournament and lessons learned.</p>
+					</article>
+					<article class="card">
+						<h4>Internship Experience</h4>
+						<div style="color:var(--muted);font-size:13px">Jun 2025 • Career</div>
+						<p style="color:var(--muted)">What I gained from my environmental sensorics internship.</p>
+					</article>
+				</div>
+			</section>
+			<section id="contact">
+				<div class="container">
+					<h2>Contact & Connect</h2>
+					<div class="contact-grid">
+						<div>
+							<p>Let’s connect — I love discussing STEM, AI, and learning.</p>
+							<p style="color:var(--muted)"><a href="https://www.linkedin.com/in/piyush-nagpal">LinkedIn</a> •
+								<a href="https://github.com/piyush-nagpal">GitHub</a> • <a
+									href="mailto:nagpal@gmail.com">Email</a>
+							</p>
+							<p style="color:var(--muted);margin-top:12px">Feel free to reach out for collaborations,
+								questions, or just
+								to chat about tech.
+							</p>
+						</div>
+						<div>
+							<form id="contactForm">
+								<input name="name" placeholder="Name" required>
+								<input name="email" placeholder="Email" required>
+								<textarea name="message" rows="6" placeholder="Message"></textarea>
+								<button class="btn" type="submit">Send</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			</section>
+			<footer>
+				© Piyush Nagpal — <span id="year"></span>
+			</footer>
+		</main>
+		<div id="modal"
+			style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,12,0.8);backdrop-filter:blur(5px);z-index:120">
+			<div id="modalContentWrapper"
+				style="width:90%;max-width:800px;background:linear-gradient(180deg,var(--card-bg-start),rgba(18,20,32,0.95));padding:24px;border-radius:16px;max-height:80vh;overflow:auto;box-shadow:0 8px 32px rgba(0,0,0,0.3); position: relative;">
+				<button id="closeModal" class="ghost" style="float:right;margin-bottom:16px">Close</button>
+				<div class="modal-nav" id="modalNav" style="display: none;">
+					<button id="prevBtn" title="Previous Item" aria-label="Previous Item">&lsaquo;</button>
+					<button id="nextBtn" title="Next Item" aria-label="Next Item">&rsaquo;</button>
+				</div>
+				<div id="modalContent" style="clear:both" class="modal-content-inner"></div>
+			</div>
+		</div>
+		<!-- Replaced single modal with two separate modals: Projects and Certificates -->
+		<div id="modalProject" class="modal-common"
+			style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,12,0.8);backdrop-filter:blur(5px);z-index:120">
+			<div class="modal-wrapper"
+				style="width:90%;max-width:800px;background:linear-gradient(180deg,var(--card-bg-start),rgba(18,20,32,0.95));padding:24px;border-radius:16px;max-height:80vh;overflow:auto;box-shadow:0 8px 32px rgba(0,0,0,0.3); position: relative;">
+				<button id="closeModalProject" class="ghost" style="float:right;margin-bottom:16px">Close</button>
+				<div class="modal-nav" id="modalNavProject" style="display: none;">
+					<button id="prevBtnProject" title="Previous Item" aria-label="Previous Item">&lsaquo;</button>
+					<button id="nextBtnProject" title="Next Item" aria-label="Next Item">&rsaquo;</button>
+				</div>
+				<div id="modalContentProject" class="modal-content-inner" style="clear:both"></div>
+			</div>
+		</div>
+		<div id="modalCert" class="modal-common"
+			style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,12,0.8);backdrop-filter:blur(5px);z-index:120">
+			<div class="modal-wrapper"
+				style="width:90%;max-width:800px;background:linear-gradient(180deg,var(--card-bg-start),rgba(18,20,32,0.95));padding:24px;border-radius:16px;max-height:80vh;overflow:auto;box-shadow:0 8px 32px rgba(0,0,0,0.3); position: relative;">
+				<button id="closeModalCert" class="ghost" style="float:right;margin-bottom:16px">Close</button>
+				<div class="modal-nav" id="modalNavCert" style="display: none;">
+					<button id="prevBtnCert" title="Previous Item" aria-label="Previous Item">&lsaquo;</button>
+					<button id="nextBtnCert" title="Next Item" aria-label="Next Item">&rsaquo;</button>
+				</div>
+				<div id="modalContentCert" class="modal-content-inner" style="clear:both"></div>
+			</div>
+		</div>
+		<!-- Toast Notification -->
+		<div id="toast"
+			style="position:fixed;bottom:32px;left:50%;transform:translateX(-50%);background:var(--accent);color:white;padding:14px 28px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.18);font-weight:600;z-index:999;display:none;transition:opacity 0.4s;">
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

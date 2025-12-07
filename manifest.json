@@ -1,0 +1,23 @@
+{
+  "name": "Piyush Nagpal",
+  "short_name": "Piyush Nagpal",
+  "description": "Explore my portfolio, including AI, machine learning, embedded systems projects, STEM learnings, achievements, and ways to contact me.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121420",
+  "theme_color": "#B76D68",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/"
+}
