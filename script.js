@@ -135,6 +135,11 @@
                     detailDesc = "I gained competence in building and interpreting **regression models** using Python's **statsmodels** library, mastering **model fitting**, **statistical tests**, and evaluating detailed regression outputs.";
                     break;
 
+                case "Scikit-learn Models":
+                    detailDesc = "I gained practical experience building and evaluating machine learning models using **scikit-learn**, including **Linear Regression**, **Classification models**, **KNN**, **SVM**, **MLP Regressor**, **XGBoost**, and more. I learned **model fitting**, **hyperparameter tuning**, and **performance evaluation** across multiple ML algorithms.";
+                    break;
+
+
                 case 'Linux Fundamentals':
                     detailDesc = "I am currently acquiring expertise in **Linux fundamentals**, including **shell navigation**, managing **file permissions**, utilizing **package managers**, handling **processes**, and essential **system administration tools**.";
                     break;
@@ -163,13 +168,6 @@
                     detailDesc = 'This is a concept for an interactive web application designed to use simple visualizations to demystify complex ML concepts like backpropagation and gradient descent for educational purposes.';
                     break;
 
-                case 'Reading: A First Course in General Relativity by Bernard F. Schutz':
-                    detailDesc = 'I am engaged in a detailed study of the fundamental mathematics of **General Relativity** from this seminal text, concentrating on **tensors**, the concept of **curved spacetime**, and the **Einstein field equations**.';
-                    break;
-
-                case 'Personal Retro Arcade Website':
-                    detailDesc = 'I am currently developing a web-based platform that features classic arcade-style games, utilizing **HTML5 Canvas** and **JavaScript** for a fully functional, browser-based experience.';
-                    break;
 
                 default:
                     detailDesc = 'Detailed description, goals and links can go here.';
@@ -220,9 +218,8 @@
         const item = projectItems[index];
         let content = `
 <h3 style="margin:0 0 12px; font-size:24px;">${sanitizeText(item.title)}</h3>
-<p style="color:var(--muted); margin:0 0 12px; font-size:14px;">${sanitizeText(item.org)}</p>
-<p style="color:var(--muted); margin:0 0 12px; font-size:14px;"><span style="font-weight:700;">Summary:</span> ${sanitizeText(item.desc)}</p>
-<p style="color:var(--muted); margin:0 0 12px;"><span style="font-weight:700;">Details:</span> ${sanitizeText(item.details)}</p>
+<p style="color:var(--muted); margin:0 0 16px; font-size:18x;">${sanitizeText(item.org)}</p>
+<p style="color:var(--muted); margin:0 0 16px;"><span style="font-weight:700;">Details:</span> ${sanitizeText(item.details)}</p>
 `;
         modalContentProject.innerHTML = content;
         modalNavProject.style.display = projectItems.length > 1 ? 'flex' : 'none';
